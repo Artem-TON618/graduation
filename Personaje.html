@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                 
+    <link rel="stylesheet" type="text/css" href="css/person.css"> 
+    <title>Personaje</title>
+  
+</head>
+<body>
+    <script>
+ 
+
+function Undertale(){
+    let name = document.Undertale.a.value;
+    let answer=document.getElementById("answer2");
+    let lowCaseName = name.toLowerCase(); 
+if (lowCaseName == 'Frisk'||lowCaseName == 'frisk'||lowCaseName == 'фріск'||lowCaseName == 'Фріск'){
+    string='Так, його звуть Фріск (Frisk)'
+} else{
+    string='На жаль, Ви помилились. Його звуть Фріск (Frisk)';
+}
+answer.innerHTML = string;
+}
+
+    </script>
+    
+   <center> <div >
+    
+
+        <p style="font-weight: 900 ;">Запитання</p> 
+      <p>Як звуть головного героя гри "Undertale"?</p>
+        <form name="Undertale" action="javascript:Undertale()">
+            Введіть  відповідь:<input class="side" name="a" type="text" value="" size="4"><br>
+            <button class="btn">
+Відповісти
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+<button class="btn">
+Назад
+<div class="hoverEffect">
+<div>
+</div>
+</div></button>
+              
+              
+        </form>
+        <span id="answer2"></span><br/>
+     
+    </div></center>
+</body>
+</html>

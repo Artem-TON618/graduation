@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/spam.css">
+    <title>Spam</title>
+</head>
+<body>
+    <script>
+        function hasSpamWords() {
+  const userText = prompt("Введіть текст:","Введіть текст на перевірку спаму");
+  
+  if (userText === null) {
+    return false; 
+  }
+
+  const lowerCaseText = userText.toLowerCase();
+  return lowerCaseText.includes("безкоштовно") || lowerCaseText.includes("гарантія")|| lowerCaseText.includes("bezcoshtovno")|| lowerCaseText.includes("garantiya") || lowerCaseText.includes("кешбек") || lowerCaseText.includes("кредит");
+}
+
+
+const containsSpam = hasSpamWords();
+
+if (containsSpam) {
+  document.write("<div>Текст містить слова, які часто використовують в спам-повідомленнях. Будьте уважні та оборежні.</div>");
+} else {
+  document.write("<div>Текст скоріш за все не містить спаму, але будьте оборежні.</div>");
+}
+
+
+    </script>
+
