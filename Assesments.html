@@ -18,36 +18,36 @@ switch(grade){
     case 1:
     case 2:
     case 3:
-        string='Низький рівень';
+        string='Це Низький рівень';
         break;
     case 4:
     case 5:
     case 6:
-        string='Середній рівень';
+        string='Це Середній рівень';
         break;
     case 7:
     case 8:
     case 9:
-        string='Задовільний рівень';
+        string='Це Задовільний рівень';
         break;
     case 10:
     case 11:
     case 12:
-        string='Високий рівень';
+        string='Це Високий рівень';
         break;
 default:
-    string='Ти чого маму дуриш?!'
+    string='Ти чого батька дуриш?!'
 }
 answer.innerHTML = string;
 }
     </script>
     <div>
-        <h1>Дізнайся, як мама назве твої оцінки</h1>
+        <h1>Дізнайся, як твій тато назве твої оцінки</h1>
         <form name="grade_level" action="javascript:grades()">
         Введіть свій бал:<input class="grade" name="a" type="text" value="" size="4"><br>
         <button class="btn">Відповідь</button>
         </form>
-        Твоя мама скаже що це : <span id="level"></span><br/>
+        Твій тато скаже : <span id="level"></span><br/>
     </div>
 </body>
 </html>
